@@ -1,0 +1,73 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    span{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: start;
+    }
+
+    img{
+        width: 20px
+    }
+
+    
+}
+
+.skillHolder{
+    margin: 1rem 2rem;
+}
+
+.skillBox{
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+}
+
+.skillsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+} 
+
+.skillGroup {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.skillData {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 110px; 
+    
+    p{
+        flex-grow: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }/* Set a fixed width for skill items */
+}
+
+@media (width >= 800px){
+    .skillsContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 80px;
+    }
+}
