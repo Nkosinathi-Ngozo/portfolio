@@ -15,7 +15,10 @@
         width: 20px
     }
 
-    
+}
+
+.skillsTitle{
+    margin-bottom: 1rem;
 }
 
 .skillHolder{
@@ -31,7 +34,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 80px;
 } 
 
@@ -69,5 +71,12 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         padding: 0 80px;
+    }
+
+    .skillData{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 0px;
     }
 }

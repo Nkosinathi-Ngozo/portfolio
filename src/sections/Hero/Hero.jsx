@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css'
-import heroImage from '../../assets/hero-img.png'
+import heroImage from '../../assets/PC-portfolio.jpeg'
 import sun from '../../assets/sun.svg'
 import moon from '../../assets/moon.svg'
 import twitterLight from '../../assets/twitter-light.svg'
@@ -45,7 +45,7 @@ function Hero() {
                 </a>
             </span>
             <p className={styles.description}>Creative thinker and problem-solver with a background in software engineering, always eager to learn and adopt new technologies.</p>
-            <a href={CV} download>
+            <a className={styles.buttonLink} href={CV} download>
                 <button className='hover'>Resume</button>
             </a>        
         

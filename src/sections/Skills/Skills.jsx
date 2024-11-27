@@ -10,8 +10,8 @@ function Skills() {
   
   const checkMarkIcon = theme === 'light'? checkMarkLight : checkMarkDark;
 
-  const frontendSkills = ['HTML', 'CSS', 'JavaScript', 'Git', 'React'];
-  const backendSkills = ['C#', 'Node JS', 'Python', 'MySQL', 'MongoDB', 'Java'];
+  const frontendSkills = ['HTML', 'CSS', 'JavaScript', 'Git', 'React', 'Angular'];
+  const backendSkills = ['C#', 'Node JS', 'Kotlin', 'Python', 'MySQL', 'MongoDB', 'Java', 'Firebase'];
 
   return (
     <section id="skills" className={styles.container}>
