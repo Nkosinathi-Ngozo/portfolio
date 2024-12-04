@@ -39,7 +39,7 @@ function Projects() {
                 <ProjectCard
                   key={index}
                   src={src}
-                  link={projectLinks[index] ? `https://github.com/Sblasta7/${projectLinks[index]}.git` : '#'}
+                  link={projectLinks[index] ? `https://github.com/Nkosinathi-Ngozo/${projectLinks[index]}.git` : '#'}
                   h3={projectName[index]}
                   p={projectType[index]}
                   description={projectDetails[index]}

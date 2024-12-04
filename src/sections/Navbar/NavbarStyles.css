@@ -23,12 +23,13 @@ nav {
     position: relative;
 }
 
-#navbar li a, h5{
+#navbar li a, .logo a{
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--text-color);
-}
+    cursor: pointer;
+} 
 
 #navbar li a:hover,
 #navbar li a.active{
@@ -36,7 +37,7 @@ nav {
 }
 
 #navbar li a:hover::after, 
-#navbar li a.active::after{
+#navbar li a.active::after {
     content: "";
     width: 30%;
     height: 2px;
@@ -46,3 +47,40 @@ nav {
     left: 20px;
 }
 
+@media (max-width: 800px) {
+    #mobile {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    
+
+    #navbar {
+        display: none; /* Hide the normal navbar items on mobile */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    /* When menu is open, show navbar items */
+    .menu.open #navbar {
+        display: flex;
+    }
+
+    #navbar li {
+        padding: 10px 0;
+    }
+
+    #navbar li a {
+        font-size: 1.5rem;
+    }
+
+    .logo a{
+        font-size: .75rem;
+        margin: 0;
+    }
+}
+
+#mobile i{
+    color: var(--text-color);
+}

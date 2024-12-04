@@ -37,7 +37,7 @@ function Hero() {
             </h1>
             <h2>Fullstack Developer</h2>
             <span>
-                <a href="https://github.com/Sblasta7" target="_blank">
+                <a href="https://github.com/Nkosinathi-Ngozo" target="_blank">
                     <img src={githubIcon} alt="github icon" />
                 </a>
                 <a href="https://www.linkedin.com/in/nkosinathi-ngozo/" target="_blank">
